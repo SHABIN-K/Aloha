@@ -2374,7 +2374,7 @@ span.is-active:after {
 /* hero css start */
 .hero {
     position: relative;
-    padding-top: 303px;
+    padding-top: 183px;
     padding-bottom: 253px;
     background-image: -moz-linear-gradient(90deg, #e82a7a 0%, #360354 100%);
     background-image: -webkit-linear-gradient(90deg, #e82a7a 0%, #360354 100%);
@@ -2405,7 +2405,7 @@ span.is-active:after {
 
 @media (max-width: 575px) {
     .hero {
-        padding-top: 250px;
+        padding-top: 179px;
     }
 }
 
@@ -2515,13 +2515,13 @@ span.is-active:after {
 
 @media (max-width: 575px) {
     .hero__title {
-        font-size: 48px;
+        font-size: 68px;
     }
 }
 
 @media (max-width: 380px) {
     .hero__title {
-        font-size: 36px;
+        font-size: 46px;
     }
 }
 
@@ -5053,6 +5053,7 @@ span.is-active:after {
 }
 
 /* contest-details-section css end */
+
 /* lottery-details css start */
 .lottery-wrapper {
     padding: 100px 30px 50px 30px;
@@ -5559,500 +5560,7 @@ span.is-active:after {
 }
 
 /* lottery-details css end */
-/* cart section css start */
-.cart-wrapper {
-    padding: 120px 30px 60px 30px;
-    background-color: #12023e;
-}
 
-@media (max-width: 991px) {
-    .cart-wrapper {
-        padding-top: 90px;
-    }
-}
-
-@media (max-width: 575px) {
-    .cart-wrapper {
-        padding-top: 80px;
-    }
-}
-
-.cart-wrapper__title {
-    font-weight: 700;
-    font-size: 60px;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-@media (max-width: 1199px) {
-    .cart-wrapper__title {
-        font-size: 56px;
-    }
-}
-
-@media (max-width: 991px) {
-    .cart-wrapper__title {
-        font-size: 48px;
-    }
-}
-
-@media (max-width: 767px) {
-    .cart-wrapper__title {
-        font-size: 36px;
-    }
-}
-
-.ticket-wrapper__header {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #4939c1;
-    padding: 30px 20px;
-}
-
-.ticket-wrapper__header button {
-    font-size: 14px;
-    text-transform: uppercase;
-    background-color: transparent;
-    color: #ffffff;
-}
-
-.ticket-wrapper__body {
-    background-color: #5a4bcc;
-    padding: 20px 20px;
-}
-
-.ticket-wrapper__body .single-row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 0;
-    border-bottom: 1px solid #8a80d9;
-}
-
-.ticket-wrapper__body .single-row:first-child {
-    padding-top: 0;
-}
-
-.ticket-wrapper__body .single-row:last-child {
-    padding-bottom: 0;
-    border-bottom: none;
-}
-
-.ticket-wrapper__body .single-row .numbers {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: -3px;
-}
-
-@media (max-width: 575px) {
-    .ticket-wrapper__body .single-row .numbers {
-        width: 100%;
-        justify-content: center;
-    }
-}
-
-.ticket-wrapper__body .single-row .numbers li {
-    margin: 3px;
-    width: 36px;
-    height: 36px;
-    background-image: -moz-linear-gradient(86deg, #ec038b 0%, #fb6468 44%, #fbb936 100%);
-    background-image: -webkit-linear-gradient(86deg, #ec038b 0%, #fb6468 44%, #fbb936 100%);
-    background-image: -ms-linear-gradient(86deg, #ec038b 0%, #fb6468 44%, #fbb936 100%);
-    box-shadow: 0px 17px 40px 0px rgba(124, 78, 25, 0.35);
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-}
-
-.ticket-wrapper__body .single-row .action-btns {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: -5px -10px;
-}
-
-@media (max-width: 575px) {
-    .ticket-wrapper__body .single-row .action-btns {
-        width: 100%;
-        margin-top: 15px;
-        justify-content: center;
-    }
-}
-
-.ticket-wrapper__body .single-row .action-btns button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-size: 22px;
-    margin: 5px 10px;
-}
-
-.ticket-wrapper__body .single-row .action-btns button:hover {
-    background-position: 120% 50%;
-}
-
-.ticket-wrapper__body .single-row .action-btns .edit-btn {
-    background-image: -moz-linear-gradient(7deg, #ec1379 0%, #6c0092 100%);
-    background-image: -webkit-linear-gradient(7deg, #ec1379 0%, #6c0092 100%);
-    background-image: -ms-linear-gradient(7deg, #ec1379 0%, #6c0092 100%);
-    box-shadow: 0px 7px 7px 0px rgba(163, 15, 110, 0.35);
-}
-
-.ticket-wrapper__body .single-row .action-btns .del-btn {
-    background-image: -moz-linear-gradient(-45deg, #c165dd 0%, #d10f7e 100%);
-    background-image: -webkit-linear-gradient(-45deg, #c165dd 0%, #d10f7e 100%);
-    background-image: -ms-linear-gradient(-45deg, #c165dd 0%, #d10f7e 100%);
-    box-shadow: 0px 7px 7px 0px rgba(209, 15, 126, 0.35);
-}
-
-.checkout-wrapper__header {
-    padding: 30px 20px 30px 20px;
-    background-color: #4939c1;
-}
-
-.checkout-wrapper__body {
-    padding: 20px;
-    background-color: #5a4bcc;
-}
-
-.checkout-wrapper__body .price li {
-    padding: 30px 0;
-    border-bottom: 1px solid #867cd5;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.checkout-wrapper__body .price li:first-child {
-    padding-top: 0;
-}
-
-.checkout-wrapper__body .price li:last-child {
-    padding-bottom: 0;
-    border-bottom: none;
-}
-
-.checkout-wrapper__body .price li .caption + span {
-    color: #24e980;
-    font-size: 15px;
-}
-
-.checkout-wrapper__body .price li .price {
-    font-size: 22px;
-    color: #ffffff;
-}
-
-.checkout-wrapper__btn {
-    text-align: center;
-    margin-bottom: -40px;
-    margin-top: 50px;
-}
-
-/* cart section css end */
-/* checkout section css start */
-.checkout-area {
-    padding: 50px 30px;
-    background-color: #12023e;
-}
-
-@media (max-width: 575px) {
-    .checkout-area {
-        padding: 30px 15px;
-    }
-}
-
-.checkout-form-area .top {
-    padding: 30px;
-    background-color: #5a4bcc;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-@media (max-width: 575px) {
-    .checkout-form-area .top .right {
-        width: 100%;
-        margin-top: 15px;
-    }
-}
-
-.checkout-form-area .top .right a {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.checkout-form-area .top .right a i {
-    width: 40px;
-    height: 40px;
-    color: #ffffff;
-    font-size: 28px;
-    background-image: -moz-linear-gradient(7deg, #ec1379 0%, #6c0092 100%);
-    background-image: -webkit-linear-gradient(7deg, #ec1379 0%, #6c0092 100%);
-    background-image: -ms-linear-gradient(7deg, #ec1379 0%, #6c0092 100%);
-    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
-.checkout-form-area .top .right a span {
-    color: #ffffff;
-    padding-left: 8px;
-    font-size: 16px;
-}
-
-.checkout-form-area .personal-details {
-    padding: 30px;
-    background-color: #5a4bcc;
-}
-
-.checkout-form-area .personal-details .title {
-    padding-bottom: 15px;
-    border-bottom: 1px dashed #9387e9;
-    margin-bottom: 30px;
-}
-
-.checkout-form-area .payment-details {
-    padding: 30px;
-    background-color: #5a4bcc;
-}
-
-.checkout-form-area .payment-details .title {
-    padding-bottom: 15px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #9387e9;
-}
-
-.checkout-form-area .info-text {
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.checkout-form-area .info-text a {
-    color: #07ff7b;
-}
-
-.personal-details-form .form-row {
-    margin: -10px -15px;
-}
-
-.personal-details-form .form-group {
-    padding: 10px 15px;
-}
-
-.personal-details-form input {
-    padding-top: 0;
-    padding-left: 0;
-    padding-bottom: 5px;
-    min-height: auto;
-    font-size: 14px;
-    border: none;
-    border-bottom: 1px solid #8991d3;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    color: #ffffff;
-}
-
-.personal-details-form input::-webkit-input-placeholder {
-    color: #9aace5;
-}
-
-.personal-details-form input::-moz-placeholder {
-    color: #9aace5;
-}
-
-.personal-details-form input:-ms-input-placeholder {
-    color: #9aace5;
-}
-
-.personal-details-form input:-moz-placeholder {
-    color: #9aace5;
-}
-
-.personal-details-form button {
-    text-transform: capitalize;
-    padding: 9px 30px;
-    width: 160px;
-    font-size: 16px;
-}
-
-.payment-form .payment-methods {
-    margin: -15px;
-}
-
-.payment-form .payment-methods button {
-    background-color: transparent;
-    padding: 5px 15px;
-    border: 1px solid #6472d9;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    margin: 15px;
-}
-
-.payment-form .payment-methods button.checked {
-    border-color: #06bcdd;
-    position: relative;
-}
-
-.payment-form .payment-methods button.checked::before {
-    position: absolute;
-    content: "\f00c";
-    font-family: 'Line Awesome Free';
-    font-weight: 900;
-    width: 33px;
-    height: 33px;
-    background-color: #06bcdd;
-    color: #ffffff;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    top: -15px;
-    right: -15px;
-    border: 3px solid #5a4bcc;
-}
-
-.payment-form .payment-methods button i {
-    color: #b2c8ff;
-    font-size: 36px;
-    line-height: 1;
-}
-
-.payment-form .payment-methods button span {
-    display: block;
-    color: #ffffff;
-    text-transform: capitalize;
-    font-size: 12px;
-}
-
-.payment-form__title {
-    font-size: 18px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.payment-form label {
-    font-size: 16px;
-}
-
-.payment-form input {
-    height: 60px;
-    font-size: 15px;
-}
-
-.payment-form button {
-    font-size: 16px;
-    text-transform: capitalize;
-    padding: 10px 35px;
-    margin-top: 20px;
-}
-
-.payment-form .form-row {
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-.payment-form .form-group {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* checkout section css end */
-/* affiliate single section css start */
-.affiliate-single-wrapper {
-    position: relative;
-    padding-left: 65px;
-    padding-right: 65px;
-    background-image: -moz-linear-gradient(120deg, #3b26db 1%, #7b19cb 100%);
-    background-image: -webkit-linear-gradient(120deg, #3b26db 1%, #7b19cb 100%);
-    background-image: -ms-linear-gradient(120deg, #3b26db 1%, #7b19cb 100%);
-    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-}
-
-@media (max-width: 991px) {
-    .affiliate-single-wrapper {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-}
-
-@media (max-width: 575px) {
-    .affiliate-single-wrapper {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-}
-
-.affiliate-single-wrapper__obj {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    text-align: right;
-}
-
-@media (max-width: 991px) {
-    .affiliate-single-wrapper__obj img {
-        width: 70%;
-    }
-}
-
-/* affiliate single section css end */
 /* how it work section css start */
 .work-card {
     padding: 0 30px;
@@ -6159,6 +5667,85 @@ span.is-active:after {
 
 /* video section css end */
 
+/* buy ticket section css start */
+.buy-ticket-section {
+    position: relative;
+    padding-top: 310px;
+    padding-bottom: 140px;
+}
+
+@media (max-width: 1450px) {
+    .buy-ticket-section {
+        padding-top: 215px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .buy-ticket-section {
+        padding-top: 110px;
+    }
+}
+
+.winner-obj {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 54%;
+}
+
+@media (max-width: 1650px) {
+    .winner-obj {
+        width: 40%;
+    }
+}
+
+@media (max-width: 991px) {
+    .winner-obj {
+        display: none;
+    }
+}
+
+.buy-btn-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.buy-btn-wrapper .arrow {
+    position: absolute;
+    top: 10%;
+    left: 240px;
+}
+
+.buy-btn-wrapper span {
+    display: block;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.winner-stat-wrapper {
+    margin-top: 265px;
+}
+
+@media (max-width: 1650px) {
+    .winner-stat-wrapper {
+        margin-top: 185px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .winner-stat-wrapper {
+        margin-top: 110px;
+    }
+}
+
+.winner-stat-wrapper__title {
+    margin-bottom: 30px;
+    color: #c4cbf9;
+}
+
+/* buy ticket section css end */
+
 /* client section css start */
 .client-wrapper__title {
     font-weight: 600;
@@ -6198,7 +5785,6 @@ span.is-active:after {
 }
 
 /* client section css end */
-
 /* faq section css start */
 .faq-el {
     position: absolute;
@@ -6246,6 +5832,7 @@ span.is-active:after {
 }
 
 /* faq section css end */
+
 
 /* sidebar css start */
 @media (max-width: 991px) {
