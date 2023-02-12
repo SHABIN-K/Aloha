@@ -208,3 +208,16 @@
   });
 
 })(jQuery);
+
+var Staff = [
+  'http://wa.me//+918089114896',
+  'http://wa.me//+917994138307',
+  'http://wa.me//+918138831899',
+  'http://wa.me//+919048356766',
+  'http://wa.me//+919207589667'
+];
+
+function randomStaff () {
+  var i = parseInt(Math.random() * Staff.length);
+  location.href = Staff[i];
+}
