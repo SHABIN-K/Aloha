@@ -172,65 +172,6 @@
     });
 
 
-    // small-post-slider 
-    $('.small-post-slider').slick({
-      infinite: false,
-      speed: 700,
-      arrows: true,
-      dots: false,
-      nextArrow: '<div class="next"><i class="las la-angle-right"></i></div>',
-      prevArrow: '<div class="prev"><i class="las la-angle-left"></i></div>',
-    });
-
-    // small-post-slider 
-    $('.client-slider').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      infinite: false,
-      speed: 700,
-      arrows: false,
-      dots: false,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-
-    // draw-ticket-slider 
-    $('.draw-ticket-slider').slick({
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      infinite: false,
-      speed: 700,
-      arrows: true,
-      dots: false,
-      prevArrow: '<div class="prev"><i class="las la-long-arrow-alt-left"></i></div>',
-      nextArrow: '<div class="next"><i class="las la-long-arrow-alt-right"></i></div>',
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
 
     // date picker js 
     $('.datepicker-here').datepicker();
