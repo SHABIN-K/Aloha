@@ -210,11 +210,11 @@
 })(jQuery);
 
 var Staff = [
-  'http://wa.me//+918089114896',
-  'http://wa.me//+917994138307',
-  'http://wa.me//+918138831899',
-  'http://wa.me//+919048356766',
-  'http://wa.me//+919207589667'
+  'http://wa.me//+918089114896',//shabin
+  'http://wa.me//+917994138307',//nisham
+  'http://wa.me//+918138831899',//shabeeb
+  'http://wa.me//+919048356766',//adeeb
+  'http://wa.me//+919207589667'//fuhad
 ];
 
 function randomStaff () {
