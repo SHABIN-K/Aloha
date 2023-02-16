@@ -209,12 +209,24 @@
 
 })(jQuery);
 
-var Staff = [
+var onlineStaff = [
   'http://wa.me//+918089114896',//shabin
   'http://wa.me//+917994138307',//nisham
   'http://wa.me//+918138831899',//shabeeb
   'http://wa.me//+919048356766',//adeeb
   'http://wa.me//+919207589667'//fuhad
+];
+
+function randomOnlineStaff () {
+  var i = parseInt(Math.random() * onlineStaff.length);
+  location.href = onlineStaff[i];
+}
+
+var Staff = [
+  'tel:+917994138307',//nisham
+  'tel:+918138831899',//shabeeb
+  'tel:+919048356766',//adeeb
+  'tel:+919207589667'//fuhad
 ];
 
 function randomStaff () {
