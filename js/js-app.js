@@ -226,7 +226,7 @@ var Staff = [
   'tel:+917994138307',//nisham
   'tel:+918138831899',//shabeeb
   'tel:+919048356766',//adeeb
-  'tel:+919207589667',//Fuhad
+  'tel:+919207589667',//fuhad
   'tel:+917994138307',//nisham
   'tel:+918138831899',//shabeeb
   'tel:+919048356766',//adeeb
@@ -234,8 +234,11 @@ var Staff = [
   'tel:+917994138307',//nisham
   'tel:+918138831899',//shabeeb
   'tel:+919048356766',//adeeb
-  'tel:+919207589667',//Fuhad
+  'tel:+919207589667'//fuhad
 ];
 
-const randomStaff = Math.floor(Math.random() * Staff.length);
-console.log(randomStaff, Staff[randomStaff]);
+function randomStaff () {
+  var i = parseInt(Math.random() * Staff.length);
+  location.href = Staff[i];
+  console.log(Staff[i])
+}
