@@ -226,7 +226,7 @@ var Staff = [
   'tel:+917994138307',//nisham
   'tel:+918138831899',//shabeeb
   'tel:+919048356766',//adeeb
-  'tel:+919207589667',
+  'tel:+919207589667',//Fuhad
   'tel:+917994138307',//nisham
   'tel:+918138831899',//shabeeb
   'tel:+919048356766',//adeeb
@@ -234,7 +234,7 @@ var Staff = [
   'tel:+917994138307',//nisham
   'tel:+918138831899',//shabeeb
   'tel:+919048356766',//adeeb
-  'tel:+919207589667',
+  'tel:+919207589667',//Fuhad
 ];
 
 const randomStaff = Math.floor(Math.random() * Staff.length);
