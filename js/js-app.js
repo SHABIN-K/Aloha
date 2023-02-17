@@ -232,7 +232,6 @@ function randomOnlineStaff () {
 var Staff = [
   'tel:+917994138307',//nisham
   'tel:+918138831899',//shabeeb
-  'tel:+919207589667',
   'tel:+917994138307',//nisham
   'tel:+918138831899',//shabeeb
   'tel:+918943332002',
