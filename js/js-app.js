@@ -212,9 +212,16 @@
 var onlineStaff = [
   'http://wa.me//+918089114896',//shabin
   'http://wa.me//+917994138307',//nisham
+  'http://wa.me//+918943332002',//shakeeb
   'http://wa.me//+918138831899',//shabeeb
-  'http://wa.me//+919048356766',//adeeb
-  'http://wa.me//+919207589667'//fuhad
+  'http://wa.me//+918089114896',//shabin
+  'http://wa.me//+917994138307',//nisham
+  'http://wa.me//+918943332002',//shakeeb
+  'http://wa.me//+918138831899',//shabeeb
+  'http://wa.me//+918089114896',//shabin
+  'http://wa.me//+917994138307',//nisham
+  'http://wa.me//+918943332002',//shakeeb
+  'http://wa.me//+918138831899'//shabeeb
 ];
 
 function randomOnlineStaff () {
@@ -225,16 +232,13 @@ function randomOnlineStaff () {
 var Staff = [
   'tel:+917994138307',//nisham
   'tel:+918138831899',//shabeeb
-  'tel:+919048356766',//adeeb
-  'tel:+919207589667',//fuhad
+  'tel:+919207589667',
   'tel:+917994138307',//nisham
   'tel:+918138831899',//shabeeb
-  'tel:+919048356766',//adeeb
-  'tel:+919207589667',//fuhad
+  'tel:+918943332002',
   'tel:+917994138307',//nisham
   'tel:+918138831899',//shabeeb
-  'tel:+919048356766',//adeeb
-  'tel:+919207589667'//fuhad
+  'tel:+918943332002'
 ];
 
 function randomStaff () {
