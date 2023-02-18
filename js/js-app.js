@@ -53,6 +53,16 @@
       prevArrow: '<div class="prev"><i class="las la-long-arrow-alt-left"></i></div>',
     });
 
+    $('.testimonial-slider').slick({
+      autoplay: true,
+      speed: 700,
+      arrows: true,
+      dots: false,
+      arrows: false,
+      vertical: true,
+      verticalSwiping: true,
+    });
+
     $('.contest-slider').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -172,9 +182,94 @@
     });
 
 
+    // small-post-slider 
+    $('.small-post-slider').slick({
+      infinite: false,
+      speed: 700,
+      arrows: true,
+      dots: false,
+      nextArrow: '<div class="next"><i class="las la-angle-right"></i></div>',
+      prevArrow: '<div class="prev"><i class="las la-angle-left"></i></div>',
+    });
+
+    // small-post-slider 
+    $('.client-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: false,
+      speed: 700,
+      arrows: false,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+    // draw-ticket-slider 
+    $('.draw-ticket-slider').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      infinite: false,
+      speed: 700,
+      arrows: true,
+      dots: false,
+      prevArrow: '<div class="prev"><i class="las la-long-arrow-alt-left"></i></div>',
+      nextArrow: '<div class="next"><i class="las la-long-arrow-alt-right"></i></div>',
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
 
     // date picker js 
     $('.datepicker-here').datepicker();
+
+    // Select on pressing COPY
+    var els_copy = document.querySelectorAll("[data-copy]");
+    for (var i = 0; i < els_copy.length; i++) {
+      var el = els_copy[i];
+      el.addEventListener("submit", function(e) {
+        e.preventDefault();
+        var text = e.target.querySelector('input[type="text"]').select();
+        document.execCommand("copy");
+      });
+    }
+
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function(e) {
+              $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+              $('#imagePreview').hide();
+              $('#imagePreview').fadeIn(650);
+          }
+          reader.readAsDataURL(input.files[0]);
+      }
+    }
+    $("#imageUpload").change(function() {
+      readURL(this);
+    });
 
     jQuery('<div class="quantity-nav"><div class="quantity-button quantity-down"><i class="las la-minus"></i></div><div class="quantity-button quantity-up"><i class="las la-plus"></i></div></div>').insertAfter('.quantity input');
       jQuery('.quantity').each(function () {
@@ -184,8 +279,73 @@
               btnDown = spinner.find('.quantity-down'),
               min = input.attr('min'),
               max = input.attr('max');
+
+          btnUp.on('click', function () {
+              var oldValue = parseFloat(input.val());
+              if (oldValue >= max) {
+                  var newVal = oldValue;
+              } else {
+                  var newVal = oldValue + 1;
+              }
+              spinner.find("input").val(newVal);
+              spinner.find("input").trigger("change");
+          });
+
+          btnDown.on('click', function () {
+              var oldValue = parseFloat(input.val());
+              if (oldValue <= min) {
+                  var newVal = oldValue;
+              } else {
+                  var newVal = oldValue - 1;
+              }
+              spinner.find("input").val(newVal);
+              spinner.find("input").trigger("change");
+          });
     });
 
+    // countdown plungin init
+    var getDate = $('.clock').attr('data-clock');
+
+    $('.clock').countdown(getDate, function(event) {
+      $(this).html(event.strftime(''
+        +'<div><span>%D</span><p>days</p></div>'
+        +'<div><span>%H</span><p>hours</p></div>'
+        +'<div><span>%M</span><p>minutes</p></div>'
+        +'<div><span>%S</span><p>seconds</p></div>'));
+    });
+
+
+    var getDate = $('.clock2').attr('data-clock');
+    $('.clock2').countdown(getDate, function(event) {
+      $(this).html(event.strftime(''
+        +'<div><span>%D</span><p>d</p></div>'
+        +'<div><span>%H</span><p>h</p></div>'
+        +'<div><span>%M</span><p>m</p></div>'
+        +'<div><span>%S</span><p>s</p></div>'));
+    });
+
+    // lottery number select js 
+    $('.lottery-single__number li').on('click', function(){
+      $(this).toggleClass('active');
+    });
+
+
+    $( function() {
+      let mainContainer = $('#slider-range-min-one');
+      let minValue = mainContainer.attr('data-value');
+      let maxValue = mainContainer.attr('data-maxValue');
+      
+      mainContainer.slider({
+        range: "min",
+        value: minValue,
+        min: 0,
+        max: maxValue,
+        slide: function( event, ui ) {
+          $( "#basic-amount" ).val(ui.value );
+        }
+      });
+      $( "#basic-amount" ).val(mainContainer.slider( "value" ) );
+    } );
 
   });
 
