@@ -5674,6 +5674,12 @@ span.is-active:after {
     padding-bottom: 140px;
 }
 
+.buy-ticket-section1 {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
 @media (max-width: 1450px) {
     .buy-ticket-section {
         padding-top: 215px;
