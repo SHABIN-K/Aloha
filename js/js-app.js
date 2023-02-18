@@ -213,15 +213,12 @@ var onlineStaff = [
   'http://wa.me//+918089114896',//shabin
   'http://wa.me//+917994138307',//nisham
   'http://wa.me//+918943332002',//shakeeb
-  'http://wa.me//+918138831899',//shabeeb
   'http://wa.me//+918089114896',//shabin
   'http://wa.me//+917994138307',//nisham
   'http://wa.me//+918943332002',//shakeeb
-  'http://wa.me//+918138831899',//shabeeb
   'http://wa.me//+918089114896',//shabin
   'http://wa.me//+917994138307',//nisham
-  'http://wa.me//+918943332002',//shakeeb
-  'http://wa.me//+918138831899'//shabeeb
+  'http://wa.me//+918943332002'//shakeeb
 ];
 
 function randomOnlineStaff () {
